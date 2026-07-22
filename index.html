@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>پخش پیام صوتی</title>
-
 <style>
 body{
     margin:0;
@@ -15,42 +14,28 @@ body{
     align-items:center;
     height:100vh;
 }
-
 .box{
-    background:white;
+    background:#fff;
     padding:30px;
     border-radius:20px;
     box-shadow:0 0 20px rgba(0,0,0,.15);
-    text-align:center;
     width:340px;
+    text-align:center;
 }
-
-h2{
-    margin-top:0;
-}
-
-p{
-    color:#555;
-}
-
 audio{
     width:100%;
     margin-top:20px;
 }
 </style>
-
 </head>
 <body>
 
 <div class="box">
-
 <h2>🎧 پیام صوتی</h2>
+<p>برای شنیدن پیام روی دکمه پخش کلیک کنید.</p>
 
-<p>برای شنیدن پیام روی دکمه ▶️ کلیک کنید.</p>
-
-<audio controls preload="auto">
-    <source src="inulin%20voice%201%20(1).mp3" type="audio/mpeg">
-    مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+<audio controls>
+    <source src="./voice.mp3" type="audio/mpeg">
 </audio>
 
 </div>
