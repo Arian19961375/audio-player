@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Audio Player</title>
+
     <style>
         body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
             font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .player {
             text-align: center;
-            margin-top: 100px;
+            background: #222;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
         }
 
         audio {
@@ -19,12 +37,19 @@
 
 <body>
 
-    <h2>پخش صدا</h2>
+<div class="player">
 
-    <audio controls>
-        <source src="https://raw.githubusercontent.com/Arian19961375/audio-player/main/audio.mp3" type="audio/mpeg">
+    <h1>🎵 Audio Player</h1>
+
+    <audio controls preload="metadata">
+        <source 
+        src="https://raw.githubusercontent.com/Arian19961375/audio-player/main/audio.mp3"
+        type="audio/mpeg">
+
         مرورگر شما از پخش فایل صوتی پشتیبانی نمی‌کند.
     </audio>
+
+</div>
 
 </body>
 </html>
